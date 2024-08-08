@@ -26,7 +26,7 @@ app.use(express.urlencoded({extended: false}));
 // Configure client-sessions
 app.use(clientSessions({
     cookieName: 'session', 
-    secret: 'your_secret_key', // Secret key to encrypt cookie
+    secret: '1980', // Secret key to encrypt cookie
     duration: 24 * 60 * 60 * 1000, 
     activeDuration: 30 * 60 * 1000 
 }));

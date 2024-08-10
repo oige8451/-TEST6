@@ -35,6 +35,10 @@ app.use(clientSessions({
 // Use Helmet for security
 app.use(helmet());
 
+app.get('/', (req, res) => {
+    res.redirect('/login');
+});
+
 // Use the profile route
 app.use('/', profileRoute);
 
